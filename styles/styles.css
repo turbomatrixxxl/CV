@@ -1,0 +1,276 @@
+/* Our App */
+body {
+font-family: 'Montserrat', sans-serif;
+background-color:#F6F6FA ;
+}
+
+.app-wrapper {
+display: flex;
+flex-direction: row-reverse;
+width: 1200px;
+margin: 40px auto;
+background-color: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar-section {
+background-color: #DFEEFF;
+}
+
+.sidebar-image {
+margin-top: 40px;
+}
+
+.contacts-container {
+padding-left: 40px;
+}
+
+.contacts-header {
+color: #161D2A;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 40px;
+margin-bottom: 10px;
+}
+
+.contacts-item {
+color: #161D2A;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
+
+.contacts-phone {
+color: #4489FF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+"johndoe@gm..."
+text-decoration: none;
+margin-left: 10px;
+}
+
+.contacts-email {
+color: #4489FF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+"johndoe@gm..."
+margin-left: 10px;
+}
+
+.contacts-elements {
+margin-top: -12px;
+}
+
+.text-skills-section {
+padding-left: 40px;
+margin-top: 40px;
+}
+
+.text-skills-header {
+color: #161D2A;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.text-skills-list {
+color: #161D2A;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-top: -10px; 
+margin-left: -10px;
+}
+
+.soft-skills-section {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+
+.soft-skills-header {
+color: #161D2A;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.soft-skills-list {
+color: #161D2A;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-top: -10px; 
+margin-left: -10px;
+}
+
+/* Main content Styles */
+.right-side-container {
+padding-left: 88px;
+padding-top: 80px;
+padding-right: 40px;
+padding-bottom: 180px;
+}
+
+.about-me-proffesion {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-me-name {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+.about-me-description {
+color: #595959;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-top: -15px;
+}
+
+.project-section {
+    margin-top: 40px;
+}
+
+.project-header {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;  
+}
+
+.project-list {
+    font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+margin-left: -20px;
+margin-top: -10px;
+}
+
+.project-name {
+color: #595959;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+text-decoration-line: underline;
+}
+
+.project-info {
+    font-weight: 400;
+}
+
+.work-experience-section {
+    margin-top: 40px;
+}
+
+.work-experience-header {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.company-name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.company-info {
+    color: #6096FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.company-time {
+color: #A8A8A8;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -10px;
+}
+
+.company-elements-list {
+color: #595959;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin-left: -15px;
+margin-top: -10px;
+}
+
+.company-container {
+    margin-top: -10px;
+}
+
+.education-section {
+    margin-top: 40px;
+}
+
+.education-header {
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.education-name {
+    color: #6096FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -15px; 
+}
+
+.education-name2 {
+    color: #6096FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -5px;
+}
+
+.education-function {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -15px;  
+} 
+
+.education-time {
+    color: #A8A8A8;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -15px;
+}

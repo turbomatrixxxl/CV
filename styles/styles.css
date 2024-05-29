@@ -485,6 +485,19 @@ side .project-info {
 }
 
 @media screen and (width >=1158px) {
+  .sidebar-section {
+    width: fit-content;
+  }
+
+  .contacts-container {
+    padding: 40px;
+  }
+
+  .mail-container {
+    width: fit-content;
+    display: flex;
+  }
+
   .contacts-email {
     font-size: 14px;
   }

@@ -1,22 +1,102 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 /* Our App */
 body {
+  padding: 0;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #f6f6fa;
+  position: relative;
 }
 
 .app-wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  width: 1200px;
-  margin: 40px auto;
+  padding: 0;
+  /* flex-direction: row-reverse; */
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 0;
   background-color: #fff;
 }
 
 /* Sidebar Styles */
 .sidebar-section {
   background-color: rgb(22, 56, 83);
-  padding: 70px;
-  width: fit-content;
+  width: 100%;
+}
+
+.mobile-navbar-menu-visible {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(179, 179, 27);
+  display: flex;
+  padding-top: 70px;
+  justify-content: center;
+  align-items: top;
+}
+
+.mobile-navbar-menu {
+  display: none;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill: #0c0c0c;
+}
+
+/* .modal-svg-close-button-container,
+.phones {
+  fill: #0c0c0c;
+} */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-list-studio {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: green;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.hamburger-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hamburger-button:hover,
+.hamburger-button:focus {
+  cursor: pointer;
 }
 
 .img {
@@ -34,7 +114,7 @@ body {
 }
 
 .contacts-container {
-  padding: 40px;
+  padding: 20px;
   width: 100%;
 }
 
@@ -44,7 +124,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -68,19 +147,19 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .right-side {
   display: block;
   height: 1px;
-  /* width: 70%; */
   margin-left: auto;
 }
 
 .contacts-email {
   color: white;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -146,10 +225,21 @@ body {
 
 /* Main content Styles */
 .right-side-container {
-  padding-left: 88px;
+  /* padding-left: 88px; */
   padding-top: 80px;
-  padding-right: 40px;
+  /* padding-right: 40px; */
   padding-bottom: 180px;
+  padding: 5px;
+}
+
+.prof {
+  width: fit-content;
+}
+
+.profi {
+  margin-top: 4px;
+  color: black;
+  height: 5px;
 }
 
 .about-me-proffesion {
@@ -160,6 +250,25 @@ body {
   background-color: aquamarine;
   width: fit-content;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: none;
+}
+
+.about-me-proffesion-mobile {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: aquamarine;
+  width: fit-content;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.marquee {
+  display: none;
 }
 
 hr {
@@ -169,12 +278,29 @@ hr {
 .about-me-name {
   text-transform: uppercase;
   background-color: #a8a8a8;
-  font-size: 45px;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-top: -10px;
   width: fit-content;
+  margin: 20px auto;
+  display: none;
+  padding: 5px;
+}
+
+.about-me-name-mobile {
+  text-transform: uppercase;
+  background-color: #a8a8a8;
+  /* font-size: 45px; */
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: -10px;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 5px;
 }
 
 .about-me-description {
@@ -218,12 +344,12 @@ hr {
 
 .project-name {
   color: blue;
-  font-size: 14px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
-  text-decoration-line: underline;
 }
+
 side .project-info {
   font-weight: 400;
 }
@@ -250,6 +376,7 @@ side .project-info {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
 .company-info {
@@ -259,6 +386,7 @@ side .project-info {
   font-weight: 700;
   line-height: normal;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .company-time {
@@ -267,7 +395,8 @@ side .project-info {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -10px;
+  /* margin-top: -10px; */
+  margin-bottom: 10px;
 }
 
 .company-elements-list {
@@ -277,7 +406,7 @@ side .project-info {
   font-weight: 400;
   line-height: 24px;
   margin-left: -15px;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 
 .company-container {
@@ -303,7 +432,8 @@ side .project-info {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: -15px;
+  /* margin-top: -15px; */
+  margin-bottom: 10px;
 }
 
 .education-name2 {
@@ -312,7 +442,9 @@ side .project-info {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: -5px;
+  /* margin-top: -5px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .education-function {
@@ -320,7 +452,8 @@ side .project-info {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: -15px;
+  /* margin-top: -15px; */
+  margin-bottom: 10px;
 }
 
 .education-time {
@@ -329,5 +462,144 @@ side .project-info {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -15px;
+  /* margin-top: -15px; */
+  margin-bottom: 10px;
+}
+
+.ed-container {
+  margin-top: -10px;
+}
+
+.ed-description {
+  margin-bottom: 10px;
+}
+
+@media screen and (width >=768px) {
+  .contacts-email {
+    font-size: 14px;
+  }
+
+  .project-name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width >=1158px) {
+  .contacts-email {
+    font-size: 14px;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+
+  .app-wrapper {
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .right-side-container {
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 180px;
+  }
+
+  .about-me-name {
+    display: block;
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .about-me-name-mobile {
+    display: none;
+  }
+
+  .about-me-proffesion {
+    display: block;
+    margin: 0;
+    font-size: 29px;
+  }
+
+  .about-me-proffesion-mobile {
+    display: none;
+  }
+
+  .marquee-mobile {
+    display: none;
+  }
+
+  .about-me-description {
+    font-size: 18px;
+  }
+
+  .project-header {
+    font-size: 26px;
+  }
+
+  .project-items {
+    font-size: 20px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .about-me-descriptions {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .work-experience-header {
+    font-size: 26px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .company-info {
+    font-size: 20px;
+  }
+
+  .company-time {
+    font-size: 16px;
+  }
+
+  .work-description {
+    font-size: 18px;
+  }
+
+  .education-header {
+    font-size: 26px;
+  }
+
+  .education-name {
+    font-size: 20px;
+  }
+
+  .education-name2 {
+    font-size: 20px;
+  }
+
+  .education-function {
+    font-size: 18px;
+  }
+
+  .education-time {
+    font-size: 16px;
+  }
+
+  .ed-description {
+    font-size: 20px;
+  }
+
+  .edu-description {
+    font-size: 18px;
+  }
 }

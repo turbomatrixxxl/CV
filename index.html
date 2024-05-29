@@ -19,9 +19,12 @@
         <!-- About me section -->
         <div>
           <h1 class="about-me-name">Radu Bogdan Naramzoiu</h1>
-          <h4 class="about-me-proffesion">Junior fullstack developer</h4>
+          <div class="prof">
+            <h4 class="about-me-proffesion">Junior fullstack developer</h4>
+            <hr class="profi" />
+          </div>
 
-          <marquee>
+          <marquee class="marquee">
             <p>
               <b>My best coding CV; dont miss any oportunity to hire me!</b>
             </p>
@@ -41,11 +44,11 @@
         </div>
         <!-- Project section -->
         <div class="project-section">
-          <h3 class="project-header">PROJECT EXPERIENCE</h3>
+          <h3 id="project" class="project-header">PROJECT EXPERIENCE</h3>
           <hr />
           <br />
           <ol class="project-list">
-            <li>
+            <li class="project-items">
               <h4>
                 The Watch Spot-Personal (HTM5L, Parcel, SCSS, JS, Figma, Git)
               </h4>
@@ -78,7 +81,7 @@
             </li>
             <br />
 
-            <li>
+            <li class="project-items">
               <h4>Web Studio (HTM5L, , CSS3, JS, Figma, Git)</h4>
               <span>Link :</span>
               <a
@@ -109,7 +112,7 @@
             </li>
             <br />
 
-            <li>
+            <li class="project-items">
               <h4>Barbershop (HTM5L, , CSS3, JS, Figma, Git)</h4>
               <span>Link :</span>
               <a
@@ -143,7 +146,7 @@
         </div>
         <!-- Work experience section -->
         <div class="work-experience-section">
-          <h3 class="work-experience-header">Work experience</h3>
+          <h3 id="work" class="work-experience-header">Work experience</h3>
           <hr />
           <br />
           <!-- 1st company-->
@@ -151,14 +154,27 @@
             <h4 class="company-name">
               Front-End Developer <span class="company-info">Freelance</span>
             </h4>
-            <p class="company-time">October 2023 - up to now | Country</p>
+            <p class="company-time">October 2023 - up to now | Romania</p>
             <ul class="company-elements-list">
-              <li>Developing of sites and mobile applications</li>
-              <li>
+              <li class="work-description">
+                Developing of sites and mobile applications using
+                <b>HTML</b> and <b>CSS</b> (structure, styles, colors, syntax)
+                and also <b>JavaScript</b>(creating interactive web pages using
+                API,libraries, async functions, working with DOM, having sound
+                of event bubbling, using lazy load for photos, throttle,
+                debounce, Json format for web storage, handlind date&time
+                functionalities, working with promises, making HTTP requests
+                using pagination for API's, parallel functions and CRUD)
+              </li>
+              <li class="work-description">
                 Debugging errors and improvement of functionality in service
               </li>
-              <li>Growth of productivity of sites SPA and statics</li>
-              <li>Refactoring templates and programs in use</li>
+              <li class="work-description">
+                Growth of productivity of sites SPA and statics
+              </li>
+              <li class="work-description">
+                Refactoring templates and programs in use
+              </li>
             </ul>
           </div>
           <!-- 2nd company-->
@@ -191,28 +207,32 @@
           </div> -->
           <!-- Education section-->
           <div class="education-section">
-            <h3 class="education-header">Education</h3>
+            <h3 id="education" class="education-header">Education</h3>
             <hr />
             <br />
-            <div>
+            <div class="ed-container">
               <h4 class="education-name">High School</h4>
               <h5 class="education-function">
                 Jean-Louis Calderon, UMT Timisoara
               </h5>
-              <p class="education-time">Graduated - June 1996 | Country</p>
+              <p class="education-time">
+                Graduated - June 1996 | Romania, Timisoara
+              </p>
             </div>
             <div>
               <h4 class="education-name2">GoIT</h4>
               <h5 class="education-function">Fullstack Online</h5>
-              <p class="education-time">October 2023 - August 2024 | Country</p>
-              <p>10 months intensive practical course :</p>
+              <p class="education-time">October 2023 - August 2024 | Romania</p>
+              <p class="ed-description">
+                10 months intensive practical course :
+              </p>
               <ul class="company-elements-list">
-                <li>
-                  HTML and CSS (structure, styles, colors, syntax) : 2
-                  individual projects and 1 team project
+                <li class="edu-description">
+                  <b>HTML</b> and <b>CSS</b> (structure, styles, colors, syntax)
+                  : 2 individual projects and 1 team project
                 </li>
-                <li>
-                  Java Script (creating interactive web pages, using API,
+                <li class="edu-description">
+                  <b>Java Script</b> (creating interactive web pages, using API,
                   libraries, async functions): 1 team project and 11 individual
                   homework projects
                 </li>
@@ -223,6 +243,78 @@
       </div>
       <!-- Sidebar section -->
       <aside class="sidebar-section">
+        <div id="mobile-navbar-menu" class="mobile-navbar-menu">
+          <!-- Mobile menu close buttom -->
+          <button class="close-modal-button" type="button">
+            <svg
+              class="modal-svg-close-button-container"
+              width="24"
+              height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <!-- Navigation  -->
+          <nav class="header-nav">
+            <!-- Menu nav -->
+            <ul class="list header-nav-list">
+              <li>
+                <a class="nav-list-studio link active" href="./index.html#about"
+                  >About me</a
+                >
+              </li>
+
+              <li>
+                <a class="nav-list-studio link active" href="./index.html#tech"
+                  >Tech Skills</a
+                >
+              </li>
+
+              <li>
+                <a class="nav-list-studio link active" href="./index.html#soft"
+                  >Soft Skills</a
+                >
+              </li>
+
+              <li>
+                <a class="nav-list-studio link active" href="./index.html#lang"
+                  >Languages</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="nav-list-studio link active"
+                  href="./index.html#hobbies"
+                  >Hobbies</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="nav-list-studio link active"
+                  href="./index.html#project"
+                  >Project experience</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-studio link" href="./index.html#work"
+                  >Work experience</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-studio link" href="./index.html#education"
+                  >Education</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="hamburger-button">
+          <svg class="phones" width="24" height="24">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <div class="img">
           <img
             src="images/IMG_20231107_114434.jpg"
@@ -230,9 +322,17 @@
             width="200"
             class="sidebar-image" />
         </div>
+        <h1 class="about-me-name-mobile">Radu Bogdan Naramzoiu</h1>
+        <h4 class="about-me-proffesion-mobile">Junior fullstack developer</h4>
+
+        <marquee class="marquee-mobile">
+          <p>
+            <b>My best coding CV; dont miss any oportunity to hire me!</b>
+          </p>
+        </marquee>
         <!-- Contact information -->
         <div class="contacts-container">
-          <h3 class="contacts-header">Contact</h3>
+          <h3 id="about" class="contacts-header">Contact</h3>
           <hr class="right-side" />
           <br />
           <div class="contacts-elements">
@@ -296,7 +396,7 @@
                   href="./images/icons.svg#icon-internet-svgrepo-com"></use></svg
             ></span>
             <a
-              href="radubogdannaramzoiu@gmail.com"
+              href="www.linkedin.com/in/radu-bogdan-naramzoiu-fullstack-developer"
               class="contacts-email"
               target="_blank"
               rel="noopener noreferrer"
@@ -306,7 +406,7 @@
         </div>
         <!-- Tech Skill information-->
         <div class="text-skills-section">
-          <h3 class="text-skills-header">Tech Skills</h3>
+          <h3 id="tech" class="text-skills-header">Tech Skills</h3>
           <hr class="right-side" />
           <br />
           <ul class="text-skills-list">
@@ -314,13 +414,18 @@
             <li><b>CSS3</b></li>
             <li><b>GIT</b></li>
             <li><b>JavaScript</b></li>
+            <li><b>Node</b></li>
+            <li><b>Ajax</b></li>
+            <li><b>Use of Libraries</b></li>
+            <li><b>Use of API's</b></li>
             <li><b>React.js</b></li>
             <li><b>Node.js</b></li>
+            <li><b>Trello</b></li>
           </ul>
         </div>
         <!-- Soft Skills information-->
         <div class="soft-skills-section">
-          <h3 class="soft-skills-header">Soft Skills</h3>
+          <h3 id="soft" class="soft-skills-header">Soft Skills</h3>
           <hr class="right-side" />
           <br />
           <ul class="soft-skills-list">
@@ -329,13 +434,12 @@
             <li><b>Teamwork </b></li>
             <li><b>Team Leading</b></li>
             <li><b>Agile</b></li>
-            <li><b>Trello</b></li>
           </ul>
         </div>
 
         <!-- Languages information-->
         <div class="soft-skills-section">
-          <h3 class="soft-skills-header">Languages</h3>
+          <h3 id="lang" class="soft-skills-header">Languages</h3>
           <hr class="right-side" />
           <br />
           <ul class="soft-skills-list">
@@ -349,7 +453,7 @@
 
         <!-- Hobbies information-->
         <div class="soft-skills-section">
-          <h3 class="soft-skills-header">Hobbies</h3>
+          <h3 id="hobbies" class="soft-skills-header">Hobbies</h3>
           <hr class="right-side" />
           <br />
           <ul class="soft-skills-list">
@@ -363,5 +467,7 @@
         </div>
       </aside>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

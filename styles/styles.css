@@ -13,6 +13,11 @@ html {
   margin: 0;
 }
 
+p {
+  color: blue;
+  font-size: 16px;
+}
+
 /* Our App */
 body {
   padding: 0;
@@ -172,8 +177,8 @@ body {
 }
 
 .text-skills-section {
-  padding: 40px;
-  margin-top: 40px;
+  padding: 0 40px;
+  margin-top: 15px;
   width: 100%;
 }
 
@@ -198,8 +203,8 @@ body {
 }
 
 .soft-skills-section {
-  padding: 40px;
-  margin-top: 40px;
+  padding: 0 40px;
+  margin-top: 27px;
   width: 100%;
 }
 
@@ -269,6 +274,7 @@ body {
 
 .marquee {
   display: none;
+  margin-top: 10px;
 }
 
 hr {
@@ -489,6 +495,10 @@ side .project-info {
     width: fit-content;
   }
 
+  .marquee {
+    display: block;
+  }
+
   .contacts-container {
     padding: 40px;
   }
@@ -508,15 +518,16 @@ side .project-info {
 
   .app-wrapper {
     flex-direction: row-reverse;
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
+    height: fit-content;
   }
 
   .right-side-container {
     padding-left: 88px;
     padding-top: 80px;
     padding-right: 40px;
-    padding-bottom: 180px;
+    /* padding-bottom: 180px; */
   }
 
   .about-me-name {

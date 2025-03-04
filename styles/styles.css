@@ -192,6 +192,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .text-skills-list {
@@ -218,6 +219,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .soft-skills-list {
@@ -342,6 +344,7 @@ hr {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -502,6 +505,14 @@ side .project-info {
   color: blue;
 }
 
+.skills{
+  color: brown;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @media screen and (width >=768px) {
   .contacts-email {
     font-size: 14px;
@@ -513,12 +524,23 @@ side .project-info {
 }
 
 @media screen and (width >=1158px) {
+  .skills{
+    font-size: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
+    height: 290px;
+  }
+
+  .skills:first-child{
+    margin-top: 30px;
+  }
+
   .sidebar-section {
     width: fit-content;
   }
 
   .soft-skills-section {
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .marquee {
